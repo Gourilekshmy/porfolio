@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  height: 60px;
+  margin-left: 100px;
+}
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+
+nav a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+#Home {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+#intro {
+  font-size: 50px;
+}
+
+.content-container {
+  margin-top: 110px;
+  margin-right: 50px;
+}
+
+.content-container p {
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-container a {
+  background-color: black;
+  color: darkgrey;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#home {
+  margin-left: 100px;
+  margin-top: 130px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.girl {
+  position: absolute;
+  z-index: 1;
+  top: -150px;
+}
+
+.shape {
+  position: absolute;
+  height: 500px;
+  top: -150px;
+}
+
+.image-container img {
+  transition: top 10s;
+  left: 5s;
+}
+.image-container:hover .girl {
+  left: -30px;
+}
+
+.image-container:hover .shape {
+  top: -200px;
+}
+
+#about {
+  margin-top: 300px;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.text-center h1 {
+  font-size: 40px;
+}
+
+.text-center h3 {
+  color: green;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-image img {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.about-content p {
+  text-align: justify;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.about-content h3 {
+  margin-top: 20px;
+}
+
+.bar {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.basebar {
+  background-color: black;
+  width: 100%;
+  border-radius: 10px;
+  height: 0.8rem;
+  position: absolute;
+  margin-top: 30px;
+}
+#topbar {
+  background-color: orange;
+  width: 89%;
+  position: absolute;
+}
+
+#cssbar {
+  background-color: orange;
+  width: 70%;
+  position: absolute;
+}
+
+#jsbar {
+  background-color: orange;
+  width: 55%;
+  position: absolute;
+}
+
+#bsbar {
+  background-color: orange;
+  width: 79%;
+  position: absolute;
+}
+.Icons {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  font-size: 30px;
+}
+
+.Icons i {
+  color: black;
+}
+.anime {
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.anime:hover {
+  background-image: linear-gradient(pink, wheat, rgb(116, 72, 108));
+}
+
+.anime:hover i {
+  color: white;
+  animation-name: rotate;
+  animation-duration: 5s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(-30deg);
+  }
+  40% {
+    transform: rotate(30deg);
+  }
+  60% {
+    transform: rotate(-30deg);
+  }
+  80% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: wheat;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 10px;
+}
